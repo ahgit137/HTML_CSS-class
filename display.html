@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* full width by default but can change width and height */
+        .block {
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        /* take up as much space as necessary, but you cant change the width and height */
+        .inline {
+            background-color: lightgreen;
+            padding: 10px;
+            margin-right: 10px;
+            width: 150px; /* does not work */
+        }
+
+         /* take up as much space as necessary, but you can change the width and height */
+        .inline-block {
+            display: inline-block;
+            background-color: lightyellow;
+            padding: 10px;
+            width: 350px; /* does not work */
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Property Example</h1>
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <div class="inline-block">Inline Block Element</div>
+</body>
+</html>
